@@ -1,0 +1,75 @@
+@url = https://api.animeii.tech
+### 表单验证测试
+POST {{url}}/auth/sendCode
+Content-Type: application/json
+
+{
+    "etype": "register",
+    "email":"echopbla@gmail.com"
+}
+### 发送验证码
+POST {{url}}/auth/sendCode
+Content-Type: application/json
+
+{
+    "name": "张三",
+    "mobile":"18899889988"
+}
+
+### 表单验证测试
+POST {{url}}/api/auth/login
+Content-Type: application/json
+
+{
+    "mobile":"18899889988",
+    "password":"123456"
+}
+
+
+###
+GET  {{url}}/user/getUserInfo
+Content-Type: application/json
+
+{
+    "iue":{"id":1}
+}
+
+
+### upload 获取token
+POST {{url}}/api/anime/auth/upload
+Content-Type: application/json
+Authorization: bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE2NDAwNDQ1OTcsImp0aSI6IjQyZTA0NCIsImlzcyI6ImFwcCIsIm5iZiI6MTY0MDAwMDM5N30.Miai0lLJIL-CzQLp9-dtdmwp4pyi4f7vlEiv1Kr3Xpw
+
+{
+}
+
+### 获取token
+POST {{url}}/api/anime/getToken
+Content-Type: application/json
+
+{
+}
+
+### 获取token
+POST {{url}}/api/anime/login
+Content-Type: application/json
+
+{
+    "id": "42e044"
+}
+### 获取token
+GET  http://192.168.0.107:8081/api/anime/auth/login
+Content-Type: application/json
+
+{
+    "id": "42e044"
+}
+
+### 获取token
+GET  {{url}}/api/anime/auth/getTokenInfo
+Content-Type: application/json
+Authorization: bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE2NDAwNDQ1OTcsImp0aSI6IjQyZTA0NCIsImlzcyI6ImFwcCIsIm5iZiI6MTY0MDAwMDM5N30.Miai0lLJIL-CzQLp9-dtdmwp4pyi4f7vlEiv1Kr3Xpw
+
+{
+    "id": "42e044"
+}

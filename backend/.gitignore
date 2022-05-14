@@ -1,0 +1,4 @@
+.vscode
+storage/*
+go.sum
+config.yaml
