@@ -33,4 +33,7 @@ yarn add element-plus
 # 安装scss
 yarn add sass node-sass sass-loader
 
+# 编译
+npx nuxi generate
+
 ```
