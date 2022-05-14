@@ -7,7 +7,7 @@ export default defineNuxtConfig({
         // Load a Node.js module directly (here it's a Sass file)
         // CSS file in the project
         '@/assets/css/main.css',
-        '@/assets/css/.css',
+        '@/assets/css/reset.css',
         // SCSS file in the project
         '@/assets/css/main.scss'
     ]
